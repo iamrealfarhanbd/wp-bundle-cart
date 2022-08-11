@@ -30064,6 +30064,11 @@ function App() {
     return wp.element.createElement(
         _react2.default.Fragment,
         null,
+        wp.element.createElement(
+            'h1',
+            null,
+            'Welcome to Rezwan World'
+        ),
         wp.element.createElement(_Card2.default, null)
     );
 }
