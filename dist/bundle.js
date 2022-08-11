@@ -30912,6 +30912,10 @@ var _axios = __webpack_require__(28);
 
 var _axios2 = _interopRequireDefault(_axios);
 
+var _rez = __webpack_require__(47);
+
+var _rez2 = _interopRequireDefault(_rez);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Card = function Card() {
@@ -30956,7 +30960,7 @@ var Card = function Card() {
         wp.element.createElement(
             'div',
             { className: 'card', style: { width: "18rem;" } },
-            wp.element.createElement('img', { src: '../../assets/images/rez.jpg', className: 'card-img-top', alt: '...' }),
+            wp.element.createElement('img', { src: _rez2.default, className: 'card-img-top', alt: '...' }),
             wp.element.createElement(
                 'div',
                 { className: 'card-body' },
@@ -30981,6 +30985,12 @@ var Card = function Card() {
 };
 
 exports.default = Card;
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
 
 /***/ })
 /******/ ]);

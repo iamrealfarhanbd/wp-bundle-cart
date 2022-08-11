@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import rez from '../../assets/images/rez.jpg';
 const Card = () => {
 
     // const [ firstname, setFirstName ] = useState( '' );
@@ -40,7 +41,7 @@ const Card = () => {
     return(
         <React.Fragment>
             <div className="card" style={{width: "18rem;"}}>
-            <img src="../../assets/images/rez.jpg" className="card-img-top" alt="..." />
+            <img src={rez} className="card-img-top" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">Rezwan shiblu sir my  js GURU</h5>
                 <p className="card-text">Now I am A React Plugin Dev</p>
