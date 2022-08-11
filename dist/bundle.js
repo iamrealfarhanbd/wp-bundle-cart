@@ -30054,9 +30054,9 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Settings = __webpack_require__(27);
+var _Card = __webpack_require__(46);
 
-var _Settings2 = _interopRequireDefault(_Settings);
+var _Card2 = _interopRequireDefault(_Card);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30064,179 +30064,13 @@ function App() {
     return wp.element.createElement(
         _react2.default.Fragment,
         null,
-        wp.element.createElement(_Settings2.default, null)
+        wp.element.createElement(_Card2.default, null)
     );
 }
 exports.default = App;
 
 /***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _react = __webpack_require__(2);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(28);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Settings = function Settings() {
-    var _useState = (0, _react.useState)(''),
-        _useState2 = _slicedToArray(_useState, 2),
-        firstname = _useState2[0],
-        setFirstName = _useState2[1];
-
-    var _useState3 = (0, _react.useState)(''),
-        _useState4 = _slicedToArray(_useState3, 2),
-        lastname = _useState4[0],
-        setLastName = _useState4[1];
-
-    var _useState5 = (0, _react.useState)(''),
-        _useState6 = _slicedToArray(_useState5, 2),
-        email = _useState6[0],
-        setEmail = _useState6[1];
-
-    var _useState7 = (0, _react.useState)('Save Settings'),
-        _useState8 = _slicedToArray(_useState7, 2),
-        loader = _useState8[0],
-        setLoader = _useState8[1];
-
-    var url = appLocalizer.apiUrl + '/wpbc/v1/settings';
-
-    var handleSubmit = function handleSubmit(e) {
-        e.preventDefault();
-        setLoader('Saving...');
-        _axios2.default.post(url, {
-            firstname: firstname,
-            lastname: lastname,
-            email: email
-        }, {
-            headers: {
-                'content-type': 'application/json',
-                'X-WP-NONCE': appLocalizer.nonce
-            }
-        }).then(function (res) {
-            setLoader('Save Settings');
-        });
-    };
-
-    (0, _react.useEffect)(function () {
-        _axios2.default.get(url).then(function (res) {
-            setFirstName(res.data.firstname);
-            setLastName(res.data.lastname);
-            setEmail(res.data.email);
-        });
-    }, []);
-
-    return wp.element.createElement(
-        _react2.default.Fragment,
-        null,
-        wp.element.createElement(
-            'h2',
-            null,
-            'React Settings Form'
-        ),
-        wp.element.createElement(
-            'form',
-            { id: 'work-settings-form', onSubmit: function onSubmit(e) {
-                    return handleSubmit(e);
-                } },
-            wp.element.createElement(
-                'table',
-                { className: 'form-table', role: 'presentation' },
-                wp.element.createElement(
-                    'tbody',
-                    null,
-                    wp.element.createElement(
-                        'tr',
-                        null,
-                        wp.element.createElement(
-                            'th',
-                            { scope: 'row' },
-                            wp.element.createElement(
-                                'label',
-                                { htmlFor: 'firstname' },
-                                'Firstname'
-                            )
-                        ),
-                        wp.element.createElement(
-                            'td',
-                            null,
-                            wp.element.createElement('input', { id: 'firstname', name: 'firstname', value: firstname, onChange: function onChange(e) {
-                                    setFirstName(e.target.value);
-                                }, className: 'regular-text' })
-                        )
-                    ),
-                    wp.element.createElement(
-                        'tr',
-                        null,
-                        wp.element.createElement(
-                            'th',
-                            { scope: 'row' },
-                            wp.element.createElement(
-                                'label',
-                                { htmlFor: 'lastname' },
-                                'Lastname'
-                            )
-                        ),
-                        wp.element.createElement(
-                            'td',
-                            null,
-                            wp.element.createElement('input', { id: 'lastname', name: 'lastname', value: lastname, onChange: function onChange(e) {
-                                    setLastName(e.target.value);
-                                }, className: 'regular-text' })
-                        )
-                    ),
-                    wp.element.createElement(
-                        'tr',
-                        null,
-                        wp.element.createElement(
-                            'th',
-                            { scope: 'row' },
-                            wp.element.createElement(
-                                'label',
-                                { htmlFor: 'email' },
-                                'Email'
-                            )
-                        ),
-                        wp.element.createElement(
-                            'td',
-                            null,
-                            wp.element.createElement('input', { id: 'email', name: 'email', value: email, onChange: function onChange(e) {
-                                    setEmail(e.target.value);
-                                }, className: 'regular-text' })
-                        )
-                    )
-                )
-            ),
-            wp.element.createElement(
-                'p',
-                { className: 'submit' },
-                wp.element.createElement(
-                    'button',
-                    { type: 'submit', className: 'button button-primary' },
-                    loader
-                )
-            )
-        )
-    );
-};
-
-exports.default = Settings;
-
-/***/ }),
+/* 27 */,
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -31058,6 +30892,95 @@ module.exports = function isAxiosError(payload) {
   return (typeof payload === 'object') && (payload.isAxiosError === true);
 };
 
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(28);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Settings = function Settings() {
+
+    // const [ firstname, setFirstName ] = useState( '' );
+    // const [ lastname, setLastName ]   = useState( '' );
+    // const [ email, setEmail ]         = useState( '' );
+    // const [ loader, setLoader ] = useState( 'Save Settings' );
+
+    // const url = `${appLocalizer.apiUrl}/wpbc/v1/settings`;
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     setLoader( 'Saving...' );
+    //     axios.post( url, {
+    //         firstname: firstname,
+    //         lastname: lastname,
+    //         email: email
+    //     }, {
+    //         headers: {
+    //             'content-type': 'application/json',
+    //             'X-WP-NONCE': appLocalizer.nonce
+    //         }
+    //     } )
+    //     .then( ( res ) => {
+    //         setLoader( 'Save Settings' );
+    //     } )
+    // }
+
+    // useEffect( () => {
+    //     axios.get( url )
+    //     .then( ( res ) => {
+    //         setFirstName( res.data.firstname );
+    //         setLastName( res.data.lastname );
+    //         setEmail( res.data.email );
+    //     } )
+    // }, [] )
+
+    return wp.element.createElement(
+        _react2.default.Fragment,
+        null,
+        wp.element.createElement(
+            'div',
+            { 'class': 'card', style: 'width: 18rem;' },
+            wp.element.createElement('img', { src: '../../assets/images/bike.jpg', 'class': 'card-img-top', alt: '...' }),
+            wp.element.createElement(
+                'div',
+                { 'class': 'card-body' },
+                wp.element.createElement(
+                    'h5',
+                    { 'class': 'card-title' },
+                    'Card title'
+                ),
+                wp.element.createElement(
+                    'p',
+                    { 'class': 'card-text' },
+                    'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+                ),
+                wp.element.createElement(
+                    'a',
+                    { href: '#', 'class': 'btn btn-primary' },
+                    'Go somewhere'
+                )
+            )
+        )
+    );
+};
+
+exports.default = Settings;
 
 /***/ })
 /******/ ]);
