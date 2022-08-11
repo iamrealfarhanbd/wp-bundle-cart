@@ -30956,18 +30956,19 @@ var Card = function Card() {
         wp.element.createElement(
             'div',
             { className: 'card', style: { width: "18rem;" } },
+            wp.element.createElement('img', { src: '../../assets/images/rez.jpg', className: 'card-img-top', alt: '...' }),
             wp.element.createElement(
                 'div',
                 { className: 'card-body' },
                 wp.element.createElement(
                     'h5',
                     { className: 'card-title' },
-                    'Card title'
+                    'Rezwan shiblu sir my  js GURU'
                 ),
                 wp.element.createElement(
                     'p',
                     { className: 'card-text' },
-                    'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+                    'Now I am A React Plugin Dev'
                 ),
                 wp.element.createElement(
                     'a',
