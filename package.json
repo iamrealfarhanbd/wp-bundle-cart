@@ -1,5 +1,5 @@
 {
-  "name": "wp-bundle-cart",
+  "name": "wp-react-kickoff",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
