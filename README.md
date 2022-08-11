@@ -1,2 +1,2 @@
 # wp-bundle-cart
-A React JS WordPress Plugin Starter
+ WordPress Plugin build with React JS
