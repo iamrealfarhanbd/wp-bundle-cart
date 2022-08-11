@@ -30090,7 +30090,7 @@ var _axios2 = _interopRequireDefault(_axios);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var rez = '../assets/images/rez.jpg';
+var rez = 'https://dev-authlabsupport.pantheonsite.io/wp-content/uploads/2022/08/1658172507816.jpg';
 var Card = function Card() {
     return wp.element.createElement(
         _react2.default.Fragment,

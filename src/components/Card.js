@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const rez = '../assets/images/rez.jpg';
+const rez = 'https://dev-authlabsupport.pantheonsite.io/wp-content/uploads/2022/08/1658172507816.jpg';
 const Card = () => {
     return(
         <React.Fragment>
