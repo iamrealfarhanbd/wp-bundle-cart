@@ -30054,7 +30054,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Card = __webpack_require__(46);
+var _Card = __webpack_require__(27);
 
 var _Card2 = _interopRequireDefault(_Card);
 
@@ -30070,7 +30070,61 @@ function App() {
 exports.default = App;
 
 /***/ }),
-/* 27 */,
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(28);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var rez = '../assets/images/rez.jpg';
+var Card = function Card() {
+    return wp.element.createElement(
+        _react2.default.Fragment,
+        null,
+        wp.element.createElement(
+            'div',
+            { className: 'card', style: { width: "18rem;" } },
+            wp.element.createElement('img', { src: rez, className: 'card-img-top', alt: '...' }),
+            wp.element.createElement(
+                'div',
+                { className: 'card-body' },
+                wp.element.createElement(
+                    'h5',
+                    { className: 'card-title' },
+                    'Rezwan shiblu sir my  js GURU'
+                ),
+                wp.element.createElement(
+                    'p',
+                    { className: 'card-text' },
+                    'Now I am A React Plugin Dev'
+                ),
+                wp.element.createElement(
+                    'a',
+                    { href: '#', className: 'btn btn-primary' },
+                    'Go somewhere'
+                )
+            )
+        )
+    );
+};
+
+exports.default = Card;
+
+/***/ }),
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30892,105 +30946,6 @@ module.exports = function isAxiosError(payload) {
   return (typeof payload === 'object') && (payload.isAxiosError === true);
 };
 
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(2);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(28);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-var _rez = __webpack_require__(47);
-
-var _rez2 = _interopRequireDefault(_rez);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Card = function Card() {
-
-    // const [ firstname, setFirstName ] = useState( '' );
-    // const [ lastname, setLastName ]   = useState( '' );
-    // const [ email, setEmail ]         = useState( '' );
-    // const [ loader, setLoader ] = useState( 'Save Settings' );
-
-    // const url = `${appLocalizer.apiUrl}/wpbc/v1/settings`;
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     setLoader( 'Saving...' );
-    //     axios.post( url, {
-    //         firstname: firstname,
-    //         lastname: lastname,
-    //         email: email
-    //     }, {
-    //         headers: {
-    //             'content-type': 'application/json',
-    //             'X-WP-NONCE': appLocalizer.nonce
-    //         }
-    //     } )
-    //     .then( ( res ) => {
-    //         setLoader( 'Save Settings' );
-    //     } )
-    // }
-
-    // useEffect( () => {
-    //     axios.get( url )
-    //     .then( ( res ) => {
-    //         setFirstName( res.data.firstname );
-    //         setLastName( res.data.lastname );
-    //         setEmail( res.data.email );
-    //     } )
-    // }, [] )
-
-    return wp.element.createElement(
-        _react2.default.Fragment,
-        null,
-        wp.element.createElement(
-            'div',
-            { className: 'card', style: { width: "18rem;" } },
-            wp.element.createElement('img', { src: _rez2.default, className: 'card-img-top', alt: '...' }),
-            wp.element.createElement(
-                'div',
-                { className: 'card-body' },
-                wp.element.createElement(
-                    'h5',
-                    { className: 'card-title' },
-                    'Rezwan shiblu sir my  js GURU'
-                ),
-                wp.element.createElement(
-                    'p',
-                    { className: 'card-text' },
-                    'Now I am A React Plugin Dev'
-                ),
-                wp.element.createElement(
-                    'a',
-                    { href: '#', className: 'btn btn-primary' },
-                    'Go somewhere'
-                )
-            )
-        )
-    );
-};
-
-exports.default = Card;
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
 
 /***/ })
 /******/ ]);
