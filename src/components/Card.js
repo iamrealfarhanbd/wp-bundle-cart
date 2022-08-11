@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import rez from '../../assets/images/rez.jpg';
+import rez from '../assets/images/rez.jpg';
 const Card = () => {
 
     // const [ firstname, setFirstName ] = useState( '' );
