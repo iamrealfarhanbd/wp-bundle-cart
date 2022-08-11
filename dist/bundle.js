@@ -30955,8 +30955,7 @@ var Card = function Card() {
         null,
         wp.element.createElement(
             'div',
-            { className: 'card', style: 'width: 18rem;' },
-            wp.element.createElement('img', { src: '../../assets/images/bike.jpg', className: 'card-img-top', alt: '...' }),
+            { className: 'card', style: { width: "18rem;" } },
             wp.element.createElement(
                 'div',
                 { className: 'card-body' },
