@@ -30097,8 +30097,8 @@ var Card = function Card() {
         null,
         wp.element.createElement(
             'div',
-            { className: 'card', style: { width: "18rem;" } },
-            wp.element.createElement('img', { src: rez, className: 'card-img-top', alt: '...' }),
+            { className: 'card', style: { width: 100 } },
+            wp.element.createElement('img', { src: rez, className: 'card-img-top ', width: 150, height: 150, alt: '...' }),
             wp.element.createElement(
                 'div',
                 { className: 'card-body' },
