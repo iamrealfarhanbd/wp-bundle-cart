@@ -3,7 +3,7 @@
  * This file will create admin menu page.
  */
 
-class wpbc_Create_Admin_Page {
+class WPBC_Create_Admin_Page {
 
     public function __construct() {
         add_action( 'admin_menu', [ $this, 'create_admin_menu' ] );
@@ -28,4 +28,4 @@ class wpbc_Create_Admin_Page {
     }
 
 }
-new wpbc_Create_Admin_Page();
+new WPBC_Create_Admin_Page();
