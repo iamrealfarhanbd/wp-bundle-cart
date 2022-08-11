@@ -30955,24 +30955,24 @@ var Card = function Card() {
         null,
         wp.element.createElement(
             'div',
-            { 'class': 'card', style: 'width: 18rem;' },
-            wp.element.createElement('img', { src: '../../assets/images/bike.jpg', 'class': 'card-img-top', alt: '...' }),
+            { className: 'card', style: 'width: 18rem;' },
+            wp.element.createElement('img', { src: '../../assets/images/bike.jpg', className: 'card-img-top', alt: '...' }),
             wp.element.createElement(
                 'div',
-                { 'class': 'card-body' },
+                { className: 'card-body' },
                 wp.element.createElement(
                     'h5',
-                    { 'class': 'card-title' },
+                    { className: 'card-title' },
                     'Card title'
                 ),
                 wp.element.createElement(
                     'p',
-                    { 'class': 'card-text' },
+                    { className: 'card-text' },
                     'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
                 ),
                 wp.element.createElement(
                     'a',
-                    { href: '#', 'class': 'btn btn-primary' },
+                    { href: '#', className: 'btn btn-primary' },
                     'Go somewhere'
                 )
             )
