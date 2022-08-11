@@ -14,8 +14,8 @@ class WPBC_Create_Admin_Page {
         $slug = 'wpbc-settings';
 
         add_menu_page(
-            __( 'Wp Bundle Cart', 'wp-bundle-cart' ),
-            __( 'Wp Bundle Cart', 'wp-bundle-cart' ),
+            __( 'WP Bundle Cart', 'wp-bundle-cart' ),
+            __( 'WP Bundle Cart', 'wp-bundle-cart' ),
             $capability,
             $slug,
             [ $this, 'menu_page_template' ],
