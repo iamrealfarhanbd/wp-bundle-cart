@@ -30914,7 +30914,7 @@ var _axios2 = _interopRequireDefault(_axios);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Settings = function Settings() {
+var Card = function Card() {
 
     // const [ firstname, setFirstName ] = useState( '' );
     // const [ lastname, setLastName ]   = useState( '' );
@@ -30980,7 +30980,7 @@ var Settings = function Settings() {
     );
 };
 
-exports.default = Settings;
+exports.default = Card;
 
 /***/ })
 /******/ ]);

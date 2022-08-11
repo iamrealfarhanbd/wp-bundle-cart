@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Settings = () => {
+const Card = () => {
 
     // const [ firstname, setFirstName ] = useState( '' );
     // const [ lastname, setLastName ]   = useState( '' );
@@ -52,4 +52,4 @@ const Settings = () => {
     )
 }
 
-export default Settings;
+export default Card;
